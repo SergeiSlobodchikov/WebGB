@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Muller ExtraBold DEMO';
+  src: url('fonts/muller_extrabold_demo.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('fonts/muller_extrabold_demo.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */
+    url('fonts/muller_extrabold_demo.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/muller_extrabold_demo.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+    url('fonts/muller_extrabold_demo.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/muller_extrabold_demo.svg#muller_extrabold_demo') format('svg');
+  /* Chrome < 4, Legacy iOS */
+}
+
+body {
+  background-color: #d3fff1;
+  width: 1000px;
+  margin: auto;
+  color: rgb(60, 60, 60);
+  font-family: 'Muller ExtraBold DEMO', sans-serif;
+}
+
+h2 {
+  color: rgb(3, 213, 255);
+}
+
+a {
+  color: rgb(117, 93, 255);
+}
+
+h1 {
+  color: rgb(3, 156, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.big_size {
+  font-size: 20px;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1.75em;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+ul li::before {
+  content: attr(data-icon);
+}
